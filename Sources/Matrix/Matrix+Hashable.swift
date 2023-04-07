@@ -27,7 +27,7 @@
 //  SOFTWARE.
 //
 
-extension Matrix where Element: Hashable {
+extension Matrix: Hashable where Element: Hashable {
     
     public func hash(into hasher: inout Hasher) {
         hasher.combine(rowCount)
